@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Chat UI',
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.postDetailPageScreen,
-      routes: AppRoutes.routes,
+      routes: AppRoutes.routes
     );
   }
 }
