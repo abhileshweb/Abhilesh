@@ -1,0 +1,4 @@
+#Tue May 30 13:51:18 IST 2023
+base.0=/Users/JMD/Downloads/TaskChat/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,36 @@
+name: abhileshchattest
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  provider: ^6.0.5
+  cached_network_image: ^3.2.1
+  flutter_svg: ^1.1.6
+  intl: ^0.17.0
+  rename: ^2.1.1
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Noto Sans
+      fonts: 
+        - asset: assets/fonts/NotoSansBold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansMedium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansRegular.ttf
+          weight: 400
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRomanRegular.ttf
+          weight: 400
+        - asset: assets/fonts/RobotoRomanMedium.ttf
+          weight: 500

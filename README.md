@@ -1,25 +1,68 @@
-[![MasterHead](https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966)](https://rishavchanda.io)
-<h1 align="center">Hi 👋, I'm Abhilesh Gupta</h1>
-<h3 align="center">A passionate Flutter developer from India</h3>
 
+# abhileshchattest
+### Table of contents
+- [System requirements](#system-requirements)
+- [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
+- [Check the UI of the entire app](#app-navigations)
+- [Application structure](#project-structure)
+- [How to format your code?](#how-you-can-do-code-formatting)
+- [How you can improve code readability?](#how-you-can-improve-the-readability-of-code)
+- [Libraries and tools used](#libraries-and-tools-used)
+- [Support](#support)
 
-- 🔭 I’m currently working on **Food Delivery Project**
+### System requirements
 
-- 🌱 I’m currently learning **IOS Development**
+Dart SDK Version 2.18.0 or greater.
+Flutter SDK Version 3.3.0 or greater.
 
-- 👯 I’m looking to collaborate on **Flutter Developer**
+### Figma design guidelines for better UI accuracy
 
-- 💬 Ask me about **Flutter,Dart**
+Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
+https://docs.dhiwise.com/docs/Designguidelines/intro
 
-- 📫 How to reach me **abhileshcsio96@gmail.com**
+### Check the UI of the entire app
 
-- ⚡ Fun fact **I spend almost 2 hours Playing Cricket every day 😊😊.**
+Check the UI of all the app screens from a single place by setting up the 'initialRoute'  to AppNavigation in the AppRoutes.dart file.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://fb.com/abhay agrahari" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="abhay agrahari" height="30" width="40" /></a>
-<a href="https://instagram.com/abhileshagrahariji" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="abhileshagrahariji" height="30" width="40" /></a>
-</p>
+### Application structure
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> </p>
+After successful build, your application structure should look like this:
+
+```
+.
+├── android                         - It contains files required to run the application on an Android platform.
+├── assets                          - It contains all images and fonts of your application.
+├── ios                             - It contains files required to run the application on an iOS platform.
+├── lib                             - Most important folder in the application, used to write most of the Dart code..
+    ├── main.dart                   - Starting point of the application
+    ├── core
+    │   ├── app_export.dart         - It contains commonly used file imports
+    │   ├── constants               - It contains static constant class file
+    │   └── utils                   - It contains common files and utilities of the application
+    ├── presentation                - It contains widgets of the screens 
+    ├── routes                      - It contains all the routes of the application
+    └── theme                       - It contains app theme and decoration classes
+    └── widgets                     - It contains all custom widget classes
+```
+
+### How to format your code?
+
+- if your code is not formatted then run following command in your terminal to format code
+  ```
+  dart format .
+  ```
+
+### How you can improve code readability?
+
+Resolve the errors and warnings that are shown in the application.
+
+### Libraries and tools used
+
+- Provider - State management
+  https://pub.dev/packages/provider
+- cached_network_image - For storing internet image into cache
+  https://pub.dev/packages/cached_network_image
+
+### Support
+
+If you have any problems or questions, go to our Discord channel, where we will help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
